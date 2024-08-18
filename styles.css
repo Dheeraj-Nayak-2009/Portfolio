@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1GlcYnm_IBY1bG-wRxXZvgjtSnrtvUaGZglQAk0zGYyt2BcjmZob7D32q&s=10');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(20%);
+    z-index: -1;
+}
+
+.container {
+    font-family: Consolas;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.imgcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.myimg {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    
+}
+
+.imgcont::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    filter: blur(5px);
+    width: calc(50% + 20px); /* Slightly larger than the image */
+    max-width: 330px; /* Adjusted to be slightly larger than the image */
+    height: calc(100% + 20px); /* Adjusted for the height */
+    border-radius: 50%;
+    background: linear-gradient(to right, fuchsia, blue);
+    opacity: 0.5;
+    z-index: 0;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    width: 100%;
+    color: white;
+    font-family: Consolas;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.static {
+    color: white;
+    font-size: 6vw;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.autotype {
+    color: cyan;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar a {  
+    font-family: Consolas;
+    color: white;  
+    text-align: center;  
+    padding: 20px 16px;  
+    text-decoration: none; 
+}
+
+.dheeraj {
+    background-image: linear-gradient(to right, fuchsia, #22aaff, turquoise);
+    font-family: Consolas;
+    font-weight: bold;
+    font-size: 150%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-8%);
+}
+
+.gradienttxt{
+  background-image: linear-gradient(to right, fuchsia,#22aaff, turquoise);
+    font-family: Consolas;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.oygradtxt{
+  background-image: linear-gradient(to right, orange, yellow);
+    font-family: Consolas;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content{
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 30%;
+  font-family: Consolas;
+}
+hr{
+  margin-bottom: 20px;
+}
