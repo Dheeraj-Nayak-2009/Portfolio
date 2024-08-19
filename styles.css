@@ -6,7 +6,7 @@ html, body {
 
 body {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1GlcYnm_IBY1bG-wRxXZvgjtSnrtvUaGZglQAk0zGYyt2BcjmZob7D32q&s=10');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
